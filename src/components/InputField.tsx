@@ -14,7 +14,7 @@ export const InputField: React.FC<Props> = ({ task, setTask, formHandler }) => {
         formHandler(e);
         inputRef.current?.blur();
       }}
-      className="flex, w-[60%] relative items-center"
+      className="flex, w-[60%] relative items-center max-[700px]:w-[95%]"
     >
       <input
         ref={inputRef}
@@ -25,7 +25,7 @@ export const InputField: React.FC<Props> = ({ task, setTask, formHandler }) => {
         placeholder="
     Enter a task"
       />
-      <button className="absolute w-[40px] h-[30px] m-3 rounded-[30px] right-0 border-none text-xl bg-sky-500 text-white duration-[0.2s_all] shadow-[0_0_10px_black] hover:bg-sky-600 active:scale-75 active:shadow-[0_0_5px_black] ">
+      <button className="absolute w-[40px] h-[30px] m-3 rounded-[30px] right-0 border-none text-xl bg-sky-500 text-white duration-[0.2s_all] shadow-[0_0_10px_black] hover:bg-sky-600 active:scale-75 active:shadow-[0_0_5px_black]  ">
         Go
       </button>
     </form>
